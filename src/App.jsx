@@ -1,16 +1,24 @@
-import React, { useState } from 'react'; // Corrected import statement
+import React from 'react'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Analytics from './components/Analytics'
+import Newsletter from './components/Newsletter'
+import Cards from './components/Cards'
+import Footer from './components/Footer'
 
+const App = () => {
+  return  <>
 
-function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <Button count={count} setCount={setCount} />
-      <Form />
+    <Navbar />
+    <Hero />
+    <Analytics />
+    <Newsletter />
+    <Cards />
+    <Footer />
     </>
-  );
+    
+  
+
 }
 
-
-export default App;
+export default App
